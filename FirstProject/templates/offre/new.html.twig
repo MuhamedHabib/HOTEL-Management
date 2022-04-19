@@ -1,0 +1,87 @@
+
+
+
+{% extends 'basepanel.html.twig' %}
+
+{% block title %}New Offre{% endblock %}
+
+{% block body %}
+    <h1>envoyez-nous votre offre</h1>
+
+
+
+
+
+    {# ************************************************************************************** #}
+    <div class="container" style=" margin: 50px 100px 60px;">
+        <div class="au-card recent-report">
+            <div class="au-card-inner">
+                <section class="dashboard-counts section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="breadcrumb">
+                                    <i class="fa fa-plus-square"></i>  Add New Offre
+                                </h3>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        {{ form_start(form, {'method': 'post','attr': {'class': 'add_offre' }}) }}
+                                        <div class="form-group">
+
+                                            <label>titre de l'offre : </label>
+                                            {{ form_widget(form.titleoffre, {'attr': {'class':'form-control ', 'placeholder': 'title','required' : 'true'}}) }}
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Prix proposé : </label>
+                                            {{ form_widget(form.priceoffre , {'attr': {'class':'form-control ', 'placeholder': 'price','required' : 'true'}}) }}
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>nbr-place: </label>
+                                            {{ form_widget(form.nombreplace , {'attr': {'class':'form-control', 'placeholder': 'indiquer combien de place','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>description  : </label>
+                                            {{ form_widget(form.description, {'attr': {'class':'form-control', 'placeholder': 'desc','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>localisation : </label>
+                                            {{ form_widget(form.localisation, {'attr': {'class':'form-control', 'placeholder': 'localisation','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label> Style : </label>
+                                            {{ form_widget(form.style, {'attr': {'class':'form-control', 'placeholder': 'style de maison/chambre','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>icon : </label>
+                                            {{ form_widget(form.image, {'attr': {'class':'form-control', 'placeholder': 'image claire','required' : 'true'}}) }}
+                                        </div>
+
+
+                                        <button class="btn btn-danger float-right"  type="submit">Submit</button>
+
+                                        <button class="btn btn-danger float-right"  type="submit" style="background-color: #0c223a"><a style="color: #FFFFFF" href="{{ path('product_index') }}">cancel</a></button>
+
+                                        <br/><br/>
+
+                                        {{ form_end(form) }}
+                                        {#{{ include('formation/_form.html.twig') }}#}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+{% endblock %}

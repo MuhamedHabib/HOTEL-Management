@@ -1,0 +1,37 @@
+{{ form_start(form, {'attr': {'novalidate':'novalidate'}}) }}
+
+    {{ form_label(form.email,'Mail:') }}
+    {{ form_widget(form.email, {'attr':{'placeholder':'login'}}) }}
+    {{ form_errors(form.email) }}
+
+<br>
+{{ form_label(form.nom_c,'LastName:') }}
+    {{ form_widget(form.nom_c, {'attr':{'placeholder':'LN'}}) }}
+    {{ form_errors(form.nom_c) }}
+<br>
+{{ form_label(form.prenom_c,'FistName:') }}
+    {{ form_widget(form.prenom_c, {'attr':{'placeholder':'FN'}}) }}
+    {{ form_errors(form.prenom_c) }}
+<br>
+{{ form_label(form.ville,'Country:') }}
+    {{ form_widget(form.ville, {'attr':{'placeholder':'YourCountry'}}) }}
+    {{ form_errors(form.ville) }}
+<br>
+{{ form_label(form.code_postale,'postcode:') }}
+    {{ form_widget(form.code_postale, {'attr':{'placeholder':'ex:3100,2765'}}) }}
+    {{ form_errors(form.code_postale) }}
+
+<br>
+{{ form_label(form.adresse,'Complete Adresse:') }}
+    {{ form_widget(form.adresse, {'attr':{'placeholder':'current Adresse'}}) }}
+    {{ form_errors(form.adresse) }}
+<br>
+    {{ form_label(form.telephone,'Phone Number:') }}
+    {{ form_widget(form.telephone, {'attr':{'placeholder':'ex:97 777 777'}}) }}
+    {{ form_errors(form.telephone) }}
+
+{{ form_widget(form) }}
+
+<button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+
+    {{ form_end(form) }}

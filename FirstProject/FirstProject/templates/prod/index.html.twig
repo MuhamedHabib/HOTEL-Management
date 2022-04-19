@@ -1,0 +1,49 @@
+
+{% extends 'base2.html.twig' %}
+
+{% block title %}Products index{% endblock %}
+
+{% block body %}
+    <h1>Products index</h1>
+
+    <table class="table" width="50%">
+        <thead style="color: #ffffff; background-color: #4ade80">
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>categ</th>
+                <th>actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.title }}</td>
+                <td><img src="{{ asset('img/' ~ product.image ) }}" alt="img" class="image" style="max-height: 100px; width: 100px;" ></td>
+
+                <td>{{ product.price }}</td>
+                <td>{{ product.category.title }}</td>
+                <td>
+
+                    <div class="" style="">
+                        <button class="btn btn-danger float-right"  type="submit" style="background-color: #0c223a"><a href="{{ path('prod_show', {'id': product.id}) }}">show</a></button>
+                        <button class="btn btn-danger float-right"  type="submit" style="background-color: #0c223a"><a href="{{ path('prod_edit', {'id': product.id}) }}">Edit</a></button>
+                    </div>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    <a href="{{ path('prod_new') }}">Create new</a>
+{% endblock %}

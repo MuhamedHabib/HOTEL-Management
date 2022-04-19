@@ -1,0 +1,33 @@
+{{ form_start(form, {'attr': {'novalidate':'novalidate'}}) }}
+{{ form_label(form.titleoffre,'Offre Name:') }}
+    {{ form_widget(form.titleoffre, {'attr':{'placeholder':'Offre Name'}}) }}
+    {{ form_errors(form.titleoffre) }}
+<br>
+{{ form_label(form.priceoffre,'Price:') }}
+    {{ form_widget(form.priceoffre, {'attr':{'placeholder':'your price must be a positive number $'}}) }}
+    {{ form_errors(form.priceoffre) }}
+<br>
+{{ form_label(form.nombreplace,'nombreplace nombreplace:') }}
+    {{ form_widget(form.nombreplace, {'attr':{'placeholder':'this field must be a positive number'}}) }}
+    {{ form_errors(form.nombreplace) }}
+<br>
+<br>
+{{ form_label(form.description,'description:') }}
+    {{ form_widget(form.description, {'attr':{'placeholder':'this is an overview'}}) }}
+    {{ form_errors(form.description) }}
+<br>
+{{ form_label(form.localisation,'localisation:') }}
+    {{ form_widget(form.localisation, {'attr':{'placeholder':' your current localisation'}}) }}
+    {{ form_errors(form.localisation) }}
+<br>
+{{ form_label(form.style,'style:') }}
+    {{ form_widget(form.style, {'attr':{'placeholder':'style'}}) }}
+    {{ form_errors(form.style) }}
+<br>
+{{ form_label(form.image,'image:') }}
+    {{ form_widget(form.image, {'attr':{'placeholder':'Offre Picture'}}) }}
+    {{ form_errors(form.image) }}
+
+    {{ form_widget(form) }}
+<button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

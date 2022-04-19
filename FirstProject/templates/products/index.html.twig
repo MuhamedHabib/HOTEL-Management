@@ -1,0 +1,95 @@
+{% extends 'base_FRONT.html.twig' %}
+
+
+
+{% block content %}
+
+    <br><br><br>
+
+    <br><br><br>
+
+    <section class="popular-course-area section-gap">
+        <div class="container-fluid">
+            <div class="row justify-content-center section-title">
+                <div class="col-lg-12">
+                    <h2>
+                        Popular Houses <br />
+                        Available Right Now
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="owl-carousel popuar-course-carusel">
+
+
+
+                {% for product in products %}
+                <div class="single-popular-course">
+                    <div class="thumb">
+                        <img class="f-img img-fluid mx-auto" src="{{ asset('img/') ~ product.image }}" alt="Image de {{ product.title }}" />
+                    </div>
+                    <div class="details">
+                        <div class="d-flex justify-content-between mb-20">
+                            <p class="name">five star</p>
+                            <p class="value">${{ product.price }}</p>
+                        </div>
+                        <a href="#">
+                            <h4>{{ product.title }}</h4>
+                        </a>
+                        <a href="{{path("cart_add", {id: product.id})}}" class="btn btn-success">
+                            <i class="bi bi-cart-plus"></i> Ajouter
+                        </a>
+                        <div class="bottom d-flex mt-15">
+                            <ul class="list">
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </li>
+                            </ul>
+                            <p class="ml-20">25 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <section class="bg-light p-3">
+        <h1 style="background-color:#0c223a ;color:#d946ef ;text-align: center ">Logement</h1>
+    </section>
+
+    <section class="row">
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+{% endblock %}

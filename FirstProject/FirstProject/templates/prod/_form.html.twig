@@ -1,0 +1,21 @@
+{{ form_start(form, {'attr': {'novalidate':'novalidate'}}) }}
+{{ form_label(form.title,'Product Name:') }}
+    {{ form_widget(form.title, {'attr':{'placeholder':'ProductName'}}) }}
+    {{ form_errors(form.title) }}
+<br>
+{{ form_label(form.image,'Product Pic:') }}
+    {{ form_widget(form.image, {'attr':{'placeholder':'image'}}) }}
+    {{ form_errors(form.image) }}
+<br>
+{{ form_label(form.price,'Product Price:') }}
+    {{ form_widget(form.price, {'attr':{'placeholder':'your price must be a positive number'}}) }}
+    {{ form_errors(form.price) }}
+<br>
+<br>
+{{ form_label(form.category,'Product Price:') }}
+    {{ form_widget(form.category, {'attr':{'placeholder':'your price must be a positive number'}}) }}
+    {{ form_errors(form.category) }}
+
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

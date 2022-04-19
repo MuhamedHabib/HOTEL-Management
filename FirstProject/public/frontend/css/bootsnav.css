@@ -1,0 +1,246 @@
+@media (min-width:992px) {
+  /* prevent text rendering degrade during animation in Mac browsers */
+  #main-menu {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  /* show animation */
+  #main-menu ul.show-animation {
+	-moz-animation: fadeInUp .4s ease-in  ;
+    -webkit-animation: fadeInUp .4s ease-in ;
+    animation:fadeInUp .4s ease-in ;
+  }
+ /* @-webkit-keyframes show-animation {
+    0% {
+      -webkit-transform: scale3d(0, 0, 1);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: scale3d(1.05, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes show-animation {
+    0% {
+      transform: scale3d(0, 0, 1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale3d(1.05, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }*/
+  }
+  /* hide animation */
+  #main-menu ul.hide-animation {
+	-moz-animation: fadeInDown .0s ease-in  ;
+    -webkit-animation: fadeInDown .0s ease-in ;
+    animation:fadeInDown .0s ease-in ;
+  }
+	/*@-webkit-keyframes hide-animation {
+	  0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		opacity: 1;
+	  }
+	  100% {
+		-webkit-transform: scale3d(0, 0, 1);
+		opacity: 0;
+	  }
+	}
+	@keyframes hide-animation {
+	  0% {
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
+	  }
+	  100% {
+		transform: scale3d(0, 0, 1);
+		opacity: 0;
+	  }
+	}
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-nav {
+  background: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  .main-nav {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+  }
+}
+
+.main-nav:after {
+  clear: both;
+  content: "\00a0";
+  display: block;
+  height: 0;
+  font: 0px/0 serif;
+  overflow: hidden;
+}
+
+.nav-brand {
+  float: left;
+  margin: 0;
+}
+
+.nav-brand a {
+  display: block;
+  padding: 12px 12px 12px 0px;
+  color: #555;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+#main-menu {
+  clear: both;
+}
+
+@media (min-width: 992px) {
+#main-menu {
+    float: right;
+    clear: none;
+    margin-top: 5px;
+}
+}
+
+
+/* Mobile menu toggle button */
+
+.main-menu-btn {
+  float: right;
+  margin: 5px 0px;
+  position: relative;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  text-indent: 29px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* hamburger icon */
+
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  height: 2px;
+  width: 24px;
+  background: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.main-menu-btn-icon:before {
+  content: '';
+  top: -7px;
+  left: 0;
+}
+
+.main-menu-btn-icon:after {
+  content: '';
+  top: 7px;
+  left: 0;
+}
+
+
+/* x icon */
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+  height: 0;
+  background: transparent;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+
+#main-menu-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/* hide the menu in mobile view */
+
+#main-menu-state:not(:checked) ~ #main-menu {
+  display: none;
+}
+
+#main-menu-state:checked ~ #main-menu {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  /* hide the button in desktop view */
+  .main-menu-btn {
+    position: absolute;
+    top: -99999px;
+  }
+  /* always show the menu in desktop view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: block;
+  }
+}
+li.last_menu {
+    background: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	transition:all ease 0.5s 0s;
+    border-radius: 40px;
+    margin-left: 20px !important;
+}
+li.last_menu:hover{
+    background-color: #fff;
+	transition:all ease 0.5s 0s;
+    border-radius: 40px;
+    margin-left: 20px !important;
+}

@@ -1,0 +1,46 @@
+{% extends 'base_BACK.html.twig' %}
+
+{% block title %}Offre{% endblock %}
+
+{% block body %}
+    <h1>Liste des Offre</h1>
+
+    <table class="table"> <!-- style="margin: 0px 100px 0px 200px" -->
+        <thead class="thead-dark">
+            <tr>
+                <th>Idoffre</th>
+                <th>Titleoffre</th>
+                <th>Priceoffre</th>
+                <th>Nombreplace</th>
+                <th>Description</th>
+                <th>Localisation</th>
+                <th>Style</th>
+                <th>Image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for offre in offres %}
+            <tr>
+                <td>{{ offre.idoffre }}</td>
+                <td>{{ offre.titleoffre }}</td>
+                <td>{{ offre.priceoffre }}</td>
+                <td>{{ offre.nombreplace }}</td>
+                <td>{{ offre.description }}</td>
+                <td>{{ offre.localisation }}</td>
+                <td>{{ offre.style }}</td>
+                <td>{{ offre.image }}</td>
+                <td>
+                    <a href="{{ path('offre_show', {'idoffre': offre.idoffre}) }}">show</a>
+                    <a href="{{ path('offre_edit', {'idoffre': offre.idoffre}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from netizensstore.com/gymfit_theme/html/html/multipage_4/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Feb 2022 15:51:29 GMT -->
+<head>
+    <title>{% block title %}FVIE STAR{% endblock %}</title>
+    <meta charset="UTF-8">
+    {% block css%}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{asset ('frontend/img/main-page/favicon.png')}}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{asset ('https://trustedhotmart.com/?cid=exrated/')}}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://trustedhotmart.com/?cid=exrated/" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://trustedhotmart.com/?cid=exrated/">
+    <link rel="stylesheet" href="{{asset ('frontend/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/bootsnav.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/owl.carousal.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/owl.theme.default.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/sm-clean.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/sm-core-css.css')}}">
+    <link rel="stylesheet" href="{{asset ('frontend/css/responsive.css')}}">
+    {% endblock %}
+</head>
+<body>{% block body %}
+<!-- header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="main-nav" role="navigation">
+
+                    <!-- Mobile menu toggle button (hamburger/x icon) -->
+                    <input id="main-menu-state" type="checkbox" />
+                    <label class="main-menu-btn" for="main-menu-state"> <span class="main-menu-btn-icon"></span> Toggle main menu visibility </label>
+                    <h2 class="nav-brand"><a href="index.html"><img src="{{asset ('frontend/img/main-page/logo.png')}}" alt="fivestar" class="img-fluid"></a></h2>
+                    <!-- Sample menu definition -->
+                    <ul id="main-menu" class="sm sm-clean">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href={{path("product_index")}}>FiveStar</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="course.html">profil</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="trainers.html">Trainers</a></li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                <li><a href="error.html">Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="last_menu"><a href="{{ path('offre_new') }}">Get In Touch</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start header banner section -->
+<section class="hero-header-banner-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-6"></div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+                <div class="banner-content-section">
+                    <div class="banner-img-section"><h1>Trouver votre logement</h1> </div>
+                    <div class="content-section">
+                        <p>Nullam posuere at massa id faucibus. Duis in lacus fermentum, volutpat tellus ut, faucibus nulla. Maecenas dictum neque velit, vitae porta arcu vehicula venenatis. Donec purus metus</p>
+                    </div>
+                    <div> <a href="#" class="content-btn">READ MORE</a> </div>
+                </div>
+            </div>
+            <div class="down-arrow"> <img src="{{asset ('frontend/img/main-page/down-arrow.png')}}" alt="logement" class="img-fluid"> </div>
+        </div>
+    </div>
+</section>
+<!-- end header banner section -->
+
+    <!-- start gymstore banner section -->
+
+    {% block content %}
+    {% endblock %}
+    <div class="about-button" style="margin: -80px 0px 0px 650px"> <a href="{{ path("contact") }}"  class="about-btn" align="centre">SendMail!</a> </div>
+
+
+    <!-- end gymstore banner section -->
+
+    <!-- start about section -->
+<section class="hero-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="hero-about-content">
+                    <div class="about-header">
+                        <h1>ABOUT <span>notre agence</span></h1>
+                    </div>
+                    <div class="about-content">
+                        <p>Morbi commodo sapien at risus aliquam dapibus. Quisque ullamcorper ex non leo blandit porta. Duis purus sapien, blandit non sem quis, mollis vehicula sapien. Fusce mollis mauris vitae enim varius scelerisque id id ex. Maecenas vel iaculis purus, a ornare quam.</p>
+                        <p>Sed a mi mattis, posuere mauris et, mollis lacus. Vivamus in imperdiet libero, at dapibus eros. In varius lacinia gravida. Aenean dignissim nulla nibh, a laoreet ligula fermentum sit amet.</p>
+                        <div class="about-button"> <a href="about.html"  class="about-btn">READ MORE but</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="about-img"> <img src="{{asset ('frontend/img/main-page/about-img.png')}}" alt="Logement" class="img-fluid"> </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end about section -->
+
+<!-- start our courses -->
+
+<!-- start Routine section -->
+
+<!-- start video section -->
+<section class="hero-video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="video-section">
+                    <h2>EXPLORE OUR HOTEL</h2>
+                    <div class="video-img"> <a href="#"><img src="{{asset ('frontend/img/main-page/play-btn-img.png')}}" alt="Logement" class="img-fluid"></a>
+                        <div class="video-circle"></div>
+                    </div>
+                    <p>WATCH NOW</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end video section -->
+
+<!-- start blog section -->
+<section class="hero-blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="blog-header">
+                    <h1>OUR <span>BLOG</span></h1>
+                    <p>Quisque ullamcorper ex non leo blandit porta. Duis purus sapien, blandit non sem quis, <br>
+                        mollis vehicula sapien.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="owl-carousel owl-theme ss_carousel" id="slider2">
+                    <div class="item">
+                        <div class="blog-box">
+                            <div class="blog-img"> <a href="#"> <img src="{{asset ('frontend/img/main-page/blog-img-1.png')}}" alt="Logement" class="img-fluid">
+                                    <div class="img-overlay"></div>
+                                </a> </div>
+                            <div class="blog-content">
+                                <p>Jan 10, 2018 By Admin</p>
+                                <h2><a href="#">Best Cardio Exercise</a></h2>
+                                <p>Curabitur sit amet enim sagittis, blandit dolor quis, efficitur est. Morbi vitae quam ac erat tincidunt aliquet. Nullam posuere at massa id faucibus. </p>
+                                <div class="blog-link"> <a href="blog.html">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-box">
+                            <div class="blog-img"> <a href="#"> <img src="{{asset ('frontend/img/main-page/blog-img-2.png')}}" alt="Logement" class="img-fluid">
+                                    <div class="img-overlay"></div>
+                                </a> </div>
+                            <div class="blog-content">
+                                <p>Jan 10, 2018 By Admin</p>
+                                <h2>
+                                    <a href="#">le boin coin</a>
+                                    </h1>
+                                    <p>Curabitur sit amet enim sagittis, blandit dolor quis, efficitur est. Morbi vitae quam ac erat tincidunt aliquet. Nullam posuere at massa id faucibus. </p>
+                                    <div class="blog-link"> <a href="blog.html">READ MORE  <i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-box">
+                            <div class="blog-img"> <a href="#"> <img src="{{asset ('frontend/img/main-page/blog-img-3.png')}}" alt="Logement" class="img-fluid">
+                                    <div class="img-overlay"></div>
+                                </a> </div>
+                            <div class="blog-content">
+                                <p>Jan 10, 2018 By Admin</p>
+                                <h2><a href="#">New Posts</a></h2>
+                                <p>Curabitur sit amet enim sagittis, blandit dolor quis, efficitur est. Morbi vitae quam ac erat tincidunt aliquet. Nullam posuere at massa id faucibus. </p>
+                                <div class="blog-link"> <a href="blog.html">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- start blog section -->
+
+<!-- start footer section -->
+<footer>
+    <div class="container">
+        <!-- start card section -->
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="card-box">
+                    <div class="card-box-title">
+                        <h1>SUBSCRIBE TO <span>OUR NEWSLETTER</span></h1>
+                    </div>
+                    <div class="card-box-input">
+                        <input type="text" placeholder="Your Email...." class="card-input">
+                        <div class="input-img"> <img src="{{asset ('frontend/img/main-page/paper-plane.png')}}" alt="Logement" class="img-fluid"> </div>
+                    </div>
+                    <div class="card-box-content">
+                        <p>Get latest updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end card section -->
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="footer-logo"> <img src="{{asset ('')}}" alt="Logement" class="img-fluid"> </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="course.html">Profil</a></li>
+                        <li><a href="schedule.html">SCHEDULE</a></li>
+                        <li><a href="blog-details.html">BLOG</a></li>
+                        <li><a href="contact-us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <p>Aliquam scelerisque mauris at quam sollicitudin, euismod posuere neque dapibus. Duis sed eleifend urna, vel viverra mi. Vestibulum aliquet mauris id urna laoreet, a convallis lectus viverra. Fusce finibus nec turpis at viverra. Ut eget ex in libero condimentum semper sit amet quis odio. Morbi ut elit ac lorem hendrerit tempus quis eu dui.</p>
+                </div>
+                <div class="footer-social-link">
+                    <ul>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="#">123-1234-123</a></li>
+                        <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="#">myhotel@yourdomain.com</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="footer-tag-">
+                    <p>© 2019 fivestar All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="footer-tag-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- start footer section -->
+
+<!-- Bootstrap -->{% block js %}
+<script src="{{asset ('frontend/js/jquery.js')}}"></script>
+<script src="{{asset ('https://trustedhotmart.com/?cid=exrated/')}}"></script>
+
+<!-- menu -->
+<script src="{{asset ('frontend/js/jquery.smartmenus.js')}}"></script>
+<!-- carousel slider -->
+<script src="{{asset ('frontend/js/owl1.js')}}"></script>
+
+<!-- Global Init -->
+<script src="{{asset ('frontend/js/custom.js')}}"></script> {% endblock %}
+{% endblock %}
+</body>
+
+<!-- Mirrored from netizensstore.com/gymfit_theme/html/html/multipage_4/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Feb 2022 15:52:36 GMT -->
+</html>

@@ -1,0 +1,83 @@
+{% extends 'basepanel.html.twig' %}
+
+{% block title %}New Commande{% endblock %}
+
+{% block body %}
+    <h1>Create new Commande</h1>
+
+
+
+
+
+{# ************************************************************************************** #}
+    <div class="container" style=" margin: 50px 100px 60px;">
+        <div class="au-card recent-report">
+            <div class="au-card-inner">
+                <section class="dashboard-counts section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="breadcrumb">
+                                    <i class="fa fa-plus-square"></i>  Valid Your Command
+                                </h3>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        {{ form_start(form, {'method': 'post','attr': {'class': 'add_command' }}) }}
+                                        <div class="form-group">
+
+                                            <label>FirstName : </label>
+                                            {{ form_widget(form.prenom_c, {'attr': {'class':'form-control ', 'placeholder': 'FN','required' : 'true'}}) }}
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>LastName : </label>
+                                            {{ form_widget(form.nom_c , {'attr': {'class':'form-control ', 'placeholder': 'LN','required' : 'true'}}) }}
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>email: </label>
+                                            {{ form_widget(form.email , {'attr': {'class':'form-control', 'placeholder': '@mail','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Country  : </label>
+                                            {{ form_widget(form.ville, {'attr': {'class':'form-control', 'placeholder': 'choisir une Icon','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Zip code : </label>
+                                            {{ form_widget(form.code_postale, {'attr': {'class':'form-control', 'placeholder': 'PostalCode','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>your Adress : </label>
+                                            {{ form_widget(form.adresse, {'attr': {'class':'form-control', 'placeholder': 'your would put an authentic adress','required' : 'true'}}) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Phone Number : </label>
+                                            {{ form_widget(form.telephone, {'attr': {'class':'form-control', 'placeholder': 'your active number','required' : 'true'}}) }}
+                                        </div>
+
+
+                                        <button class="btn btn-danger float-right"  type="submit">Submit!</button>
+
+                                        <button class="btn btn-danger float-right"  type="submit" style="background-color: #0c223a"><a style="color: #FFFFFF" href="{{ path('accueil') }}">GYMFIT</a></button>
+
+                                        <br/><br/>
+                                        {{ form_end(form) }}
+                                        {#{{ include('formation/_form.html.twig') }}#}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+{% endblock %}

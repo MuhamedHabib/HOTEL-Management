@@ -1,0 +1,67 @@
+{% extends 'basepanel.html.twig' %}
+
+{% block title %}Les produits
+{% endblock %}
+
+{% block body %}
+    <section class="bg-light p-3">
+        <h1>Les produits</h1>
+    </section>
+
+    <section class="row">
+        {% for product in products %}
+            <div class="col-4 mt-4">
+                <div class="border border-dark rounded p-2 clearfix">
+                    <h2>{{ product.title }}</h2>
+                    <p>{{ product.price }} €</p>
+                    <img class="w-100" src="{{ asset('img/') ~ product.image }}" alt="Image de {{ product.title }}">
+                    <hr>
+                    <a href="{{path("cart_add", {id: product.id})}}" class="btn btn-success">
+                        <i class="bi bi-cart-plus"></i> Ajouter
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+
+
+
+
+    ////////////////
+
+    <section class="contact-sec" id="contact">
+        <div class="container">
+            <h2>Get in Touch <small>Our work is the presentation of our capabilities.</small> </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleName">Name</label>
+                        <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="examplePhone">Phone Number</label>
+                        <input type="text" class="form-control" id="examplePhone" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="exampleTextarea">Enter your Message</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="col-md-12 text-xs-center action-block"> <a href="#" class="btn btn-capsul btn-aqua">Submit</a> </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    ///////////////
+{% endblock %}

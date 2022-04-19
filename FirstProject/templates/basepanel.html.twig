@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}Welcome!
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<nav  style="background-color: #0c223a">
+    <div class="container-fluid">
+        <h2 class="nav-brand"><a href="{{ path('product_index') }}"><img src="{{asset ('frontend/img/main-page/fstr.PNG')}}" alt="Logement" class="img-fluid" ></a></h2>
+
+        <a class="navbar-brand" href="{{ path('cart_index') }}"><h2 style="color: #d946ef">Panel</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ path('product_index') }}"><h2 style="color:#7985db">Logement</h2></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('cart_index') }}"><h2 style="color: #a78bfa">Your Panel</h2></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container pt-5">
+    {% block body %}{% endblock %}
+</main>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

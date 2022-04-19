@@ -1,0 +1,50 @@
+{% extends 'basepanel.html.twig' %}
+
+{% block title %}Commande{% endblock %}
+
+{% block body %}
+    <h1>Commande</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ commande.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_c</th>
+                <td>{{ commande.nomC }}</td>
+            </tr>
+            <tr>
+                <th>Prenom_c</th>
+                <td>{{ commande.prenomC }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ commande.email }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ commande.ville }}</td>
+            </tr>
+            <tr>
+                <th>Code_postale</th>
+                <td>{{ commande.codePostale }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ commande.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ commande.telephone }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('commande_index') }}">back to list</a>
+
+    <a href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
+
+    {{ include('commande/_delete_form.html.twig') }}
+{% endblock %}

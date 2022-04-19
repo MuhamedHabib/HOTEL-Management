@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<title>Category</title>
+
+{% block body %}
+    <h1>Category</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ category.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ category.title }}</td>
+            </tr>
+            <tr>
+                <th>Slug</th>
+                <td>{{ category.slug }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('category_index') }}">back to list</a>
+
+    <a href="{{ path('category_edit', {'id': category.id}) }}">edit</a>
+
+    {{ include('category/_delete_form.html.twig') }}
+{% endblock %}

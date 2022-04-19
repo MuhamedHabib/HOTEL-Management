@@ -1,0 +1,47 @@
+{% extends 'basepanel.html.twig' %}
+
+{% block title %}Commande index{% endblock %}
+
+{% block body %}
+    <h1>Commande index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_c</th>
+                <th>Prenom_c</th>
+                <th>Email</th>
+                <th>Ville</th>
+                <th>Code_postale</th>
+                <th>Adresse</th>
+                <th>Telephone</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commande in commandes %}
+            <tr>
+                <td>{{ commande.id }}</td>
+                <td>{{ commande.nomC }}</td>
+                <td>{{ commande.prenomC }}</td>
+                <td>{{ commande.email }}</td>
+                <td>{{ commande.ville }}</td>
+                <td>{{ commande.codePostale }}</td>
+                <td>{{ commande.adresse }}</td>
+                <td>{{ commande.telephone }}</td>
+                <td>
+                    <a href="{{ path('commande_show', {'id': commande.id}) }}">show</a>
+                    <a href="{{ path('commande_edit', {'id': commande.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="#">Select Command</a>
+{% endblock %}

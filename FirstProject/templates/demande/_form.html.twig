@@ -1,0 +1,21 @@
+{{ form_start(form, {'attr': {'novalidate':'novalidate'}}) }}
+{{ form_label(form.nomprenom,'nomprenom:') }}
+    {{ form_widget(form.nomprenom, {'attr':{'placeholder':'nomprenom'}}) }}
+    {{ form_errors(form.nomprenom) }}
+<br>
+{{ form_label(form.contact,'contact:') }}
+    {{ form_widget(form.contact, {'attr':{'placeholder':'contact'}}) }}
+    {{ form_errors(form.contact) }}
+<br>
+{{ form_label(form.datedebut,'datedebut:') }}
+    {{ form_widget(form.datedebut, {'attr':{'placeholder':'datedebut'}}) }}
+    {{ form_errors(form.datedebut) }}
+<br>
+<br>
+{{ form_label(form.image,'Image:') }}
+    {{ form_widget(form.image, {'attr':{'placeholder':'Image'}}) }}
+    {{ form_errors(form.image) }}
+
+    {{ form_widget(form) }}
+<button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

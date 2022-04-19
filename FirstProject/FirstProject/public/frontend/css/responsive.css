@@ -1,0 +1,595 @@
+/* media queries */
+
+/* start media query for 1920px display */
+.hero-header-banner-section {
+	padding: 253px 0;
+}
+
+section.hero-course-banner-section {
+	padding: 11% 0;
+}
+a footer.hero-footer {
+	margin-top: -70px;
+}
+
+
+
+@media screen and (width:1366px) {
+.hero-header-banner-section {
+    padding: 162px 0;
+}
+.down-arrow {
+    bottom: -5%;
+}
+}
+/* start media query for 1024px display device */
+@media screen and (width:1280px) {
+.hero-header-banner-section {
+    padding: 140px 0;
+}
+.banner-img-section h1 {
+    font-size: 49px;
+}
+.sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
+    padding: 12px 20px;
+    color: #fff;
+    border-radius: 0 !important;
+}
+}
+@media screen and (width:1024px) {
+.footer-nav ul {
+	width: 70%;
+}
+#myBtnContainer {
+	width: 85%;
+}
+.video-circle {
+	left: 44.68%;
+}
+.hero-header-banner-section {
+    padding: 120px 0;
+}
+.banner-img-section h1 {
+    font-size: 40px;
+}
+.banner-content-section {
+    padding-top: 40px;
+}
+.sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
+    padding: 12px 22px;
+}
+section.hero-about {
+    margin: 50px 0;
+}
+section.hero-courses.section {
+    padding: 40px 0 50px;
+}
+.about-btn {
+    margin-top: 20px;
+}
+.our-courses-box {
+    padding: 20px;
+}
+section.hero-trainers {
+    margin: 40px 0 50px;
+}
+.hero-routine {
+    padding: 40px 0;
+}
+.hero-blog-section {
+    margin: 40px 0;
+}
+}
+
+
+
+
+
+
+/* start media query for 768px display device */
+
+@media screen and (width:768px) {
+.banner-img-section h2 {
+    font-size: 40px;
+}
+.hero-header-banner-section {
+    padding: 110px 0;
+}
+.hero-about-content {
+    margin: 0px 0 0 0;
+}
+section.hero-about {
+    margin: 60px 0 40px;
+}
+section.hero-trainers {
+    margin: 40px 0;
+}	
+.about-img {
+	padding: 0;
+	margin-top: 30px;
+}
+.about-img img.img-fluid {
+	width: 100%;
+	display: block;
+}
+.hero-range-slider {
+	padding-top: 80px;
+}
+.range-title {
+	margin-top: -30px;
+}
+.post-img {
+	width: 18%;
+}
+.bottom-btn-2 {
+	width: 15.5%;
+	padding: 6px 20px;
+}
+.blog-categories {
+	display: block;
+	margin: 60px 0 0 0;
+}
+section.hero-routine {
+    padding: 45px 0;
+}
+section.hero-trainers {
+	margin: 60px 0;
+}
+section.hero-routine {
+	padding: 60px 0;
+}
+div#myBtnContainer .btn {
+	padding: 6px 12px;
+}
+.hero-blog-section {
+    margin: 40px 0;
+}
+.hero-video-section {
+	padding: 60px 0;
+}
+.hero-blog-section {
+	margin: 60px 0;
+}
+.footer-nav ul {
+	width: 83%;
+}
+.card-box {
+	width: 88%;
+	left: 6%;
+}
+.contact-card h3 {
+	font-size: 13px;
+}
+.contact-card {
+	padding: 60px 10px 50px 10px;
+}
+.contact-box-icons {
+	width: 35%;
+}
+.video-circle {
+	left: 42.84%;
+}
+.banner-img-section h1 {
+    font-size: 30px;
+}
+.hero-header-banner-section .content-section p {
+    margin: 10px auto;
+}
+.content-btn {
+    width: 140px;
+    padding: 7px 0;
+}
+.down-arrow {
+    bottom: -5%;
+    left: 45%;
+}
+header {
+    padding-top: 20px;
+}
+.hero-courses.section {
+    padding: 40px 0 50px;
+    background-color: #f8f8f9;
+}
+section.hero-trainers {
+    margin: 40px 0 50px;
+}
+section.hero-routine {
+    padding: 40px 0 50px;
+}
+.hero-blog-section {
+    margin: 40px 0 50px;
+}
+li.last_menu {
+    background: none;
+    margin-left: 0px !important;
+    border-radius: 0px;
+}
+li.last_menu:hover{
+	background:none;
+	margin-left:0px !important;
+	border-radius:0px !important;
+}
+#myBtnContainer {
+    width: 100%;
+}
+.content h4 {
+    font-size: 18px;
+}
+section.hero-courses.section {
+    padding: 50px 0;
+    background-color: #f8f8f9;
+}
+.our-courses-header h2 {
+    font-size: 30px;
+}
+.routine-title h1 {
+    font-size: 30px;
+}
+.about-header h1 {
+    font-size: 30px;
+}
+.trainer-header h1 {
+    font-size: 30px;
+}
+.blog-header h1 {
+    font-size: 30px;
+}
+.card-box-title h1 {
+    font-size: 30px;
+}
+.range-title h1{
+    font-size: 30px;
+}
+.testimonials-title h1 {
+    font-size: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* start media query for mobile view */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+li.last_menu{
+	background:transparent;
+	margin-left:0px !important;
+}
+.banner-img-section h2 {
+    font-size: 35px;
+}
+header {
+    padding-top: 15px;
+}
+.down-arrow{
+	display:none;
+}
+.about-header h1 {
+    font-size: 30px;
+}
+.range-title h1{
+	font-size:30px;
+}
+.range-title {
+    margin-top: 20px;
+}
+.testimonials-title h1{
+	font-size:30px;
+}
+.hero-testimonials {
+    margin: 40px 0;
+}
+.hero-video-section {
+    padding: 40px 0;
+}
+.trainer-header h1{
+	font-size:30px;
+}
+.error-content h2 {
+    font-size: 27px;	
+    text-transform: uppercase;
+}
+/* navbar */
+.navbar-light .navbar-nav .nav-link:hover:after, .navbar-light .navbar-nav .nav-link:active:after {
+	width: 24%;
+	transition: 0.5s all ease;
+}
+.navbar-light .navbar-nav .nav-link:after {
+	left: 6px;
+}
+/* header banner */
+.hero-header-banner-section {
+    padding: 180px 0 110px 0;
+    background-position: unset;
+}
+/* about */
+.about-img {
+	padding: 0;
+	margin-top: 30px;
+}
+/* schedule */
+section.hero-schedule-banner-section {
+	padding: 107px 0;
+}
+.blog-column-1 {
+	display: inline-block;
+	width: 49%;
+}
+.blog-column-2 {
+	display: inline-block;
+	width: 49%;
+}
+.blog-column-3 {
+	display: inline-block;
+	width: 49%;
+}
+.blog-column-4 {
+	display: inline-block;
+	width: 49%;
+}
+.blog-column-5 {
+	display: inline-block;
+	width: 49%;
+}
+#myBtnContainer {
+	width: 88%;
+}
+div#myBtnContainer .btn {
+    padding: 6px 15px;
+}
+#myBtnContainer{
+	background-color:transparent !important;
+}
+/* footer */
+.card-box {
+	width: 88%;
+	left: 6%;
+	;
+}
+.card-box-title h1 {
+	font-size: 17px;
+}
+input.card-input {
+	width: 78%;
+}
+.input-img {
+	top: 40%;
+	left: 75%;
+}
+.footer-logo {
+	margin: 0;
+	text-align: left;
+}
+.footer-nav ul {
+	width: 88%;
+	text-align: left;
+	display: block;
+	margin: 30px 0;
+}
+.footer-content p {
+	text-align: left;
+	width: 100%;
+}
+.footer-social-link ul {
+	text-align: left;
+}
+.footer-social-link ul li {
+	margin: 8px 0;
+}
+.footer-tag-2 ul {
+    text-align: center;
+    margin: 15px 0;
+}
+.footer-tag- p {
+    text-align: center;
+}
+.footer-social-link ul li span img.img-fluid {
+	padding: 10px;
+	width: 39px;
+}
+/* inner page */
+
+    /* about page */
+
+    /* header banner */
+section.hero-about-banner-section {
+    padding: 140px 0;
+    background-position: center;
+}
+/* start blog page */
+.hero-blog-banner-section {
+    padding: 140px 0;
+}
+.hero-blog-details-banner-section {
+    padding: 140px 0;
+}
+.blog-card {
+	width: 100%;
+}
+.bottom-nav ul li {
+	margin: 0;
+}
+/* blog details */
+section.hero-contact-banner-section{
+	padding:140px 0px;
+}
+.details-tag-1 {
+	width: 100%;/* float: left; */
+}
+.details-tag-1 ul li span img.img-fluid {
+	width: 13%;
+	margin-right: 5px;
+	display: inline-block;
+}
+.details-tag-2 {
+	width: 100%;
+}
+.details-tag-2 ul {
+	text-align: left;
+}
+.details-tag-2 ul li span img.img-fluid {
+	width: 18%;
+	margin-right: 5px;
+	display: inline-block;
+}
+.blog-details-content h2 {
+	font-size: 21px;
+}
+.blog-details-content h2 {
+	text-align: left;
+}
+.special-paragraph {
+	width: 98%;
+	margin-left: 10px;
+}
+.special-para-img img.img-fluid {
+	width: 43%;
+	height: 116px;
+}
+.blog-details-tag-list ul li span img.img-fluid {
+	width: 35%;
+}
+.bottom-btn-1 {
+	width: auto;
+}
+.bottom-btn-2 {
+	width: auto;
+}
+.author-img {
+	width: 100%;
+	float: none;
+}
+.author-img-border {
+	width: 143px;
+	height: 143px;
+	top: -6px;
+	left: -6px;
+}
+.authore-content h2 {
+	text-align: left;
+	margin-top: 15px;
+}
+.comment-box-img img.img-fluid {
+	padding: 5px;
+	width: 100%;
+}
+.comment-box-img {
+	width: 37%;
+	float: none;
+}
+.comment-box-content {
+	width: 100%;
+}
+.comment-box-header {
+	width: 70%;
+	float: none;
+}
+.comment-box-reply-section {
+	width: 30%;
+}
+input.input-form {
+	display: block;
+	width: 100%;
+	margin: 10px 6px;
+}
+textarea.input-massege {
+	display: block;
+	width: 100%;
+	margin: 15px 6px;
+}
+.blog-categories h2 {
+	margin-top: 60px;
+}
+.authore-content {
+	width: 100%;
+}
+.details-tag-1 ul li {
+	font-size: 11px;
+}
+ul.navbar-nav {
+	padding: 15px 0;
+}
+/* team page */
+.trainer-img img.img-fluid {
+	width: 100%;
+	display: block;
+}
+/* error page */
+
+section.hero-error-banner-section {
+	background-position: left;
+	padding: 57% 0;
+	overflow: hidden;
+}
+/* coming soon page */
+section.hero-coming-soon-banner-section {
+	background-position: center;
+	padding: 35% 0 0 0;
+	overflow: hidden;
+}
+.coming-soon-content h2 {
+	font-size: 18px;
+}
+.coming-soon-block ul li p {
+	font-size: 18px;
+}
+.coming-soon-block ul li h5 {
+	padding: 14px;
+	font-size: 30px;
+	width: 90px;
+}
+.coming-soon-card-input {
+	width: 75%;
+}
+.coming-soon-input-img {
+	top: 0%;
+	left: 74%;
+}
+.coming-soon-footer p {
+	margin-top: 50px;
+}
+.video-circle {
+	left: 35%;
+}
+.banner-img-section h1 {
+    font-size: 30px;
+}
+.hero-header-banner-section {
+	background-image: url(../img/main-page/bg_mlb.png);
+}
+section.hero-about {
+    margin: 50px 0;
+}
+.about-content {
+    margin-top: 30px;
+}
+section.hero-courses.section {
+    padding: 40px 0 50px;
+    background-color: #f8f8f9;
+}
+section.hero-trainers {
+    margin: 40px 0 50px;
+}
+section.hero-routine {
+    padding: 40px 0 50px;
+}
+.hero-blog-section {
+    margin: 40px 0 50px;
+}
+li.last_menu:hover{
+	background:none;
+	margin-left:0px !important;
+}
+section.hero-course-banner-section {
+    padding: 140px 0px;
+}
+section.hero-schedule-banner-section {
+    padding: 140px 0;
+}
+}
